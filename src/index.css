@@ -1,0 +1,33 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0a0a0a;
+  color: #e5e7eb;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(23, 31, 47, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-field {
+  @apply w-full bg-gray-800/50 border border-gray-600 rounded-lg pl-10 pr-3 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300;
+}
+
+.btn-gradient {
+  background-image: linear-gradient(to right, #4f46e5, #7c3aed);
+  box-shadow: 0 4px 15px 0 rgba(79, 70, 229, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(79, 70, 229, 0.6);
+}
